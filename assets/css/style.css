@@ -1,13 +1,21 @@
-.article_image {
-    height: 300px;
+.article_title{
+   font-size: 20px;
 }
-
-.article_description {
-    height: 150px;
-    word-wrap: break-word;
-    overflow: auto;
+.article_image{
+   height: 300px;
 }
-
-.article_title {
-    font-size: 20px;
+.article_description{
+   height: 200px;
+   word-wrap: break-word;
+   overflow: auto;
+}
+h1{
+   font-family:'Permanent Marker', cursive;
+   font-size:8vw;
+   color: #4169E1 ;
+   margin-bottom: 35px;
+   text-align: center;
+   background-color: rgba(81,141,193, 0.5);
+   border-radius: 30px;
+   box-shadow: 6px 6px 50px black;
 }

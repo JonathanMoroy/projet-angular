@@ -2,7 +2,7 @@ var App = angular.module('App', ['ngRoute']);
 
 
 App.config(['$routeProvider', function ($routeProvider) {
-        $routeProvider
+        $routeProvider               
                 .when('/computers', {
                     templateUrl: 'assets/partials/computers.html',
                     controller: 'computersCtrl'
