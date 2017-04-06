@@ -1,3 +1,72 @@
-{
-    "name": "jonathan"
-}
+[
+    {
+        "nom": "Samsung Gear s2",
+        "descriptif": "Cette smartwatch est compatible avec les smartphones Android 4.4 et version supérieure et intégrant une mémoire RAM de 1,5 Go ou plus.Résistante à l’eau et à la poussière, elle est certifiée IP68. elle se recharge d’un simple geste grâce à la charge à induction.",
+        "image": "assets/img/watchs/samsung-gear-s2.jpg",
+        "prix": 237.19,
+        "quantite": 0
+    },
+    {
+        "nom": "MyKronoz Zecircle 2",
+        "descriptif": "La Montre connectée ZC2 en plus de donner l'heure- paie facilement et en toute sécurité vos achats quotidiens - enregistre vos pas, votre distance, vos calories et votre sommeil - affiche le numéro et/ou le contact de l'appel entrant - vous avertit à réception d'un SMS, notifications d'emails, calendrier et de vos réseaux sociaux - définit vos objectifs et rappels quotidiens - contrôle votre activité et vos progrès.",
+        "image": "assets/img/watchs/mykronoz-zecircle-2.jpg",
+        "prix": 52.99,
+        "quantite": 0
+    },
+    {
+        "nom": "Huawei Elegant",
+        "descriptif": "Montre Connectée HuaWei - Bracelet cuir blanc - Ecran : Amoled, 1.4, Résolution : 400 x 400 pixels, 286 ppi - OS : Android Wear - Processeur : 1.2 GHz Qualcomm® Snapdragon 400 - Mémoire : 4 Go ROM - Blutooth et WIFi - Batterie : 300 mAH - Compatible avec Android 4.3 + et IOS 8.2 + -Capteurs : Gyroscope , Accéléromètre , Fréquence Cardiaque, Baromètre - Haut-parleur intégré - Micro intégré -Vibreur intégré - Garantie.",
+        "image": "assets/img/watchs/huawei-elegant.jpg",
+        "prix": 479.99,
+        "quantite": 0
+    },
+    {
+        "nom": "Sony Smartwatch 3 SWR50",
+        "descriptif": "Sony SmatWatch 3 SWR50 Sport - Bracelet Métal - Montre connectée Android Wear - Montre compatible Android - Écran transflectif 1,6? - Processeur quadri-coeur ARM A7, 1,2 Ghz - Étanchéité : IP 68 - Android 4.3 et versions ultérieures - Bluetooth® 4.0 - NFC - Couleur : Noir - Garantie du fabricant : 1 An.",
+        "image": "assets/img/watchs/sony-smartwatch-3-swr50.jpg",
+        "prix": 199.98,
+        "quantite": 0
+    },
+    {
+        "nom": "Samsung Gear s2 Classic",
+        "descriptif": "Cette smartwatch est compatible avec les smartphones Android 4.4 et version supérieure et intégrant une mémoire RAM de 1,5 Go ou plus.Résistante à l’eau et à la poussière, elle est certifiée IP68. elle se recharge d’un simple geste grâce à la charge à induction.",
+        "image": "assets/img/watchs/samsung-gear-s2-classic.jpg",
+        "prix": 329.00,
+        "quantite": 0
+    },
+    {
+        "nom": "Huawei Elite",
+        "descriptif": "Huawei Watch Elite - Acier inoxydable Plaqué or! Fonctionnant sous Android, elle est construite à partir de la technologie Crystal Saphire. Grâce à elle, la Huawei Watch est aussi résistante que du diamant. Magnifique, vous aimerez la porter jour après jour. Écran : 1.4 Full AMOLED - Processeur Qualcomm APQ8026 1.2GHz - Batterie 300mAh - Bluetooth 4.0/4.1 - Garantie du fabricant 1 an",
+        "image": "assets/img/watchs/huawei-elite.jpg",
+        "prix": 439.99,
+        "quantite": 0
+    },
+    {
+        "nom": "Huawei Classic",
+        "descriptif": "Voici la première montre connectée sous le système Android construite à partir de la technologie Crystal Saphire. Grâce à elle, la Huawei Watch est aussi résistante que du diamant. Magnifique, vous aimerez la porter jour après jour. Écran : 1.4 Full AMOLED - Processeur Qualcomm APQ8026 1.2GHz - Batterie 300mAh - Bluetooth 4.0/4.1 - Garantie du fabricant 1 an.",
+        "image": "assets/img/watchs/huawei-classic.jpg",
+        "prix": 349.99,
+        "quantite": 0
+    },
+    {
+        "nom": "Samsung Gear fit 2",
+        "descriptif": "Montre connectée Samsung Gear Fit 2 - Montre compatible Android - Bluetooth 4.2 - Ecran Super AMOLED 1,5 - Etanchéité IP68 - Garantie du fabricant 1 an.",
+        "image": "assets/img/watchs/samsung-gear-fit-2.jpg",
+        "prix": 199.99,
+        "quantite": 0
+    },
+    {
+        "nom": "Griffin Technology Survivor etui",
+        "descriptif": "Coque de protection pour montre, conçu pour : Apple Watch (38 mm) protection d'écran couleur feu de corail matériau : Polycarbonate, TPE.",
+        "image": "assets/img/watchs/griffin-technology-survivor-etui.jpg",
+        "prix": 13.25,
+        "quantite": 0
+    },
+    {
+        "nom": "Sony Smartband 2",
+        "descriptif": "Du 1er février 2017 au 31 Mars 2017 inclus, Sony vous rembourse jusqu’à 50€ pour l’achat d’un Smartband 2 - Android 4.4 - Bluetooth 4.0 basse consommation - Etanchéité : IP68 - Batterie : 56 mAh - Garantie du fabricant : 2 ans.",
+        "image": "assets/img/watchs/sony-smartband-2.jpg",
+        "prix": 119.99,
+        "quantite": 0
+    }
+]
