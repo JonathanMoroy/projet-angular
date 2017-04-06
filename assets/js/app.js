@@ -29,8 +29,13 @@ App.controller('indexCtrl', ['$scope', function ($scope) {
      
     }]);
 
-App.controller('computersCtrl', ['$scope', function ($scope) {
+App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
         // Configuration de mon contrôleur home
+         $http.get('assets/json/computers.json')
+        // Si on le récupère avec succès on le stocke dans la variable $scope.computers
+        .then(function(res){
+          $scope.computers = res.data;
+        });
     }]);
 
 App.controller('phonesCtrl', ['$scope', function ($scope) {

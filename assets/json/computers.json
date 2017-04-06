@@ -1,3 +1,72 @@
+[
 {
-    "name": "jonathan"
-}
+    "nom" : "Acer Spin 5",
+    "descriptif" : "L'ordinateur portable Acer Spin 5 SP513-51 a été spécialement conçu pour vous offrir  un usage informatique simplifié  au quotidien d'une finesse qui défis toute concurrence. Avec  son écran LED 13,3p Full HD entièrement pliable,  une épaisseur de 19.7 mm et un poids de 1,6 kilo seulement, il peut  se glisser facilement dans votre sac pour vous accompagner dans tous vos déplacements.  Petit mais performant, il embarque  un processeur Intel® Core™ i3-6100U ainsi  qu'une carte graphique Intel HD 520 pour vous garantir  un accès rapide et fluide à l'ensemble de vos contenus. ",
+    "image" : "assets/img/computers/acer_spin5.jpg",
+    "prix" : 549,
+    "quantité" : 5 
+},
+        {
+    "nom" : "HP Pavilion 14",
+    "descriptif" : "Avec son châssis argent naturel et son design épuré, l'ordinateur portable HP Pavilion 14-al101nf vous apporte les mêmes avantages qu'un ordinateur de bureau. Disposant d'un écran WLED 14p HD, il est parfaitement fiable et adapté à la gestion de votre univers multimédia au quotidien. Avec ses multiples ports de connectivité, il a spécialement été conçu pour optimiser votre productivité en toutes circonstances et vous apporter entière satisfaction.",
+    "image" : "assets/img/computers/hp_pavilion14.jpg",
+    "prix" : 679.15,
+    "quantité" : 5
+},
+    {
+    "nom" : "Packard Bell Easynote LG81BA-CD3F",
+    "descriptif" : "Fiabilité et performance sont les maîtres mots de ce PC portable Packard Bell Easynote LG81BA-CD3F. Surfez, travaillez et jouez en toute confiance grâce à son processeur Intel® Celeron® N3050 qui vous garantit la puissance nécessaire, peu importe les tâches exécutées. Son grand écran LED 17,3p HD+ sublimera les couleurs de vos films et jeux préférés. Profitez de la commodité d'une connectivité complète, d'un lecteur / graveur DVD intégré et d'un large pavé numérique.",
+    "image" : "assets/img/computers/packard_bell.jpg",
+    "prix" : 319,
+    "quantité" : 5 
+},
+    {
+    "nom" : "Zenbook UX306UA-FB125T",
+    "descriptif" : "Imaginé par les concepteurs d'Asus, le PC portable Zenbook UX306UA-FB125T est doté d'un design à l'élégance inégalée. Paré d'un châssis de couleur argentée, il est plus léger et plus fin que ses prédécesseurs - 1,3 kg pour 1,39cm d'épaisseur seulement - et vous permettra d'accéder en permanence à votre univers multimédia, où que vous soyez. Il redéfinit ainsi le concept de la mobilité à un nouveau niveau.",
+    "image" : "assets/img/computers/asus_zenbook.jpg",
+    "prix" : 806.65,
+    "quantité" : 5 
+},
+    {
+    "nom" : "HP Spectre x360 13-4154nf",
+    "descriptif" : "Avec le PC hybride HP Spectre x360 13-4154nf, bénéficiez d'une expérience utilisateur exceptionnelle et d'un usage nomade simplifié. Ultra-fin et élégamment conçu, cet appareil vous offre de multiples fonctionnalités et une flexibilité qui feront de lui le compagnon idéal pour profiter pleinement de votre univers multimédia, même en déplacement. Avec ses quatre modes d'utilisation, ses performances ultra rapides et sa batterie longue durée, il ne rechigne pas à la tâche et saura s'adapter à tous vos usages.",
+    "image" : "assets/img/computers/hp_spectre.jpg",
+    "prix" : 1104.15,
+    "quantité" : 5
+},
+    {
+    "nom" : "Lenovo Touch Y70-70",
+    "descriptif" : "L'ordinateur portable Y70-70 Touch de Lenovo a été spécialement conçu pour vous offrir un usage informatique simplifié. Performant, il embarque un écran LED tactile de 17,3p Full HD, un processeur Intel® Core™ i7-4720HQ, une carte graphique Nvidia GeForce GTX 960M à 2 Go dédiés et de multiples connectiques pour vous garantir un accès rapide et fluide à l'ensemble de vos contenus, où que vous soyez.",
+    "image" : "assets/img/computers/lenovo_touch.jpg",
+    "prix" : 1359.15,
+    "quantité" : 5 
+},
+    {
+    "nom" : "Acer Aspire S5-371T-78QF",
+    "descriptif" : "L'ordinateur portable Acer Aspire S5-371T-78QF est le compagnon idéal de vos usages multimédia au quotidien ! Avec son écran LED tactile 13 pouces Full HD, divertissez-vous où que vous soyez. Travaillez en toute fluidité grâce à son processeur Intel® Core™ i7-6500U, ses 8 Go de mémoire vive, sa carte graphique Intel HD 520 et sa grande capacité de stockage de 256 Go SSD.",
+    "image" : "assets/img/computers/acer_aspire.jpg",
+    "prix" : 849.15,
+    "quantité" : 5 
+},
+    {
+    "nom" : "ASUS X555YI-XX150T",
+    "descriptif" : "Le PC portable ASUS X555YI-XX150T  arbore  un design blanc d'une finesse optimale. Il intègre de nombreuses technologies pour  un équilibre parfait entre beauté et puissance. Il vous apporte le meilleur de la technologie dans vos usages multimédia, qu'il s'agisse de vous divertir ou de travailler. Son processeur AMD Quad Core A8-7410, sa carte graphique AMD Radeon R5 M320 et ses multiples connectiques offrent une nouvelle dimension à vos contenus. ",
+    "image" : "assets/img/computers/asus_x555yi.jpg",
+    "prix" : 449,
+    "quantité" : 5 
+},
+    {
+    "nom" : "Lenovo IdeaPad 310-15IKB",
+    "descriptif" : "L'ordinateur portable IdeaPad 310-15IKB de Lenovo a été spécialement conçu pour vous offrir un usage informatique simplifié. Performant, il embarque un écran LED 15,6p Full HD, un processeur Intel® Core™ i5-7200U, une carte graphique Nvidia GeForce GT920 2 Go dédiés et de multiples connectiques pour vous garantir un accès rapide et fluide à l'ensemble de vos contenus, où que vous soyez.",
+    "image" : "assets/img/computers/lenovo_310.jpg",
+    "prix" : 509.15,
+    "quantité" : 5
+},
+    {
+    "nom" : "MacBook Air",
+    "descriptif" : "Le stockage flash compact du MacBook Air laisse de la place pour une plus grosse batterie. Collaborant étroitement avec l’architecture Intel Core de cinquième génération économe en énergie, cette batterie se distingue par des performances exceptionnelles. Elle offre jusqu’à 12 heures d’autonomie sur une même charge. Suffisamment pour passer toute une journée à surfer sur le Web ou à regarder des films iTunes. Mettez votre MacBook Air en veille pendant plus de 3 heures, et il entrera en mode de réserve afin de préserver son autonomie sur une durée de 30 jours maximum. Enfin, si vous activez la fonctionnalité Power Nap, vous continuerez à recevoir vos e‑mails et invitations de calendrier même lorsque votre ordinateur sera en veille. ",
+    "image" : "assets/img/computers/macbook_air.jpg",
+    "prix" : 999,
+    "quantité" : 5
+}  
+               ]

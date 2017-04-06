@@ -1,12 +1,12 @@
 <div class="container-fluid">
+    <h1>Tablettes</h1>
     <div class="row">
         <div ng-repeat="data in tabs" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div>
                 <h2 class="article_title">{{data.nom}}</h2>
-                <img class="article_image" src="{{data.image}}"/>
+                <img class="article_image" src="{{data.image}}" alt="Image de la tablette"/>
                 <p class="article_description"><strong>Description: </strong>{{data.description}}</p>
                 <p><strong>Prix: </strong>{{data.prix| currency: '€'}}</p>
-                <p><strong>Catégorie: </strong>{{data.categorie}}</p>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
         <div ng-repeat="watch in watchs" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div>
                 <h2 class="article_title"><em>{{watch.nom}}</em></h2>
-                <img class="article_image" src="{{watch.image}}"/>
+                <img class="article_image" src="{{watch.image}}" alt="Image de la montre"/>
                 <p class="article_description"><strong>Description: </strong>{{watch.descriptif}}</p>
                 <p><strong>Prix: </strong>{{watch.prix |currency:'€'}}</p>
             </div>
