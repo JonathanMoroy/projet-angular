@@ -1,3 +1,61 @@
-{
-    "name": "jonathan"
-}
+[{
+	"nom": "APPLE iPad Wi-Fi - Ecran 9,7\" Rétina ",
+	"description": "APPLE iPad Wi-Fi - Ecran 9,7\" Rétina rétroéclairé multitouch LED- Stockage 128 Go - Coprocesseur M9 - Puce A9 architecture 64 bits - Caméra 8MP avec vidéo 1080 MP - Caméra FaceTime HD 1,2 MP - Capteur d'empreintes digitales Touch ID -Wi‑Fi (802.11a/b/g/n/​ac) ; bi-bande (2,4 GHz et 5 GHz) ; HT80 avec MIMO -2 haut-parleurs - Jusqu'à 10h d'autonomie - Bluetooth 4.2",
+	"image": "assets/img/pads/ipad.jpg",
+	"categorie": "pads",
+	"prix": 509.00
+}, {
+	"nom": "Surface Pro 4 Ecran tactile 12,3\"",
+	"description": "Surface Pro 4 avec écran 12,3 pouces - Processeur Intel Core i5 6e génération - Stockage 256 Go - 8 Go de RAM - 2736 x 1824 pixels - USB 3.0 standard - Caméra avant 5 MPx / arrière 8,0 MPx - jusqu'à 9h de lecture vidéo - stylet Surface inclus - Mini DisplayPort - lecteur de cartes microSD - port clavier Cover - prise casque - Surface Connect - Windows 10 Professionnel ",
+	"image": "assets/img/pads/surface-pro.jpg",
+	"categorie": "pads",
+	"prix": 1349.00
+}, {
+	"nom": "CDISPLAY Tablette Tactile 8\" Full HD 16Go + Carte SD 16Go",
+	"description": "CDISPLAY Tablette Tactile 8’’ Full HD 16Go + Carte SD 16Go, processeur MTK 8163-T quadruple-cœur 1.5Ghz, RAM 2Go, Android 6.0 Marshmallow, caméra avant 2 MP, caméra arrière 2 MP, WIFI 802.11a/b/g/n, Bluetooth 4.1, Garantie 2 ans pièce & main d'oeuvre",
+	"image": "assets/img/pads/cdisplay.jpg",
+	"categorie": "pads",
+	"prix": 99.99
+}, {
+	"nom": "ASUS Tablette Tactile ZD300M 10,1\"",
+	"description": "Tablette tactile ZD300M-6A017A avec écran 10.1\" IPS - Processeur Mediatek 8163 QC 1.3 Ghz - Mémoire 1Go - Stockage 16Go - WiFi/Bluetooth - Port Micro USB - Lecteur carte Micro SD - Audio Jack 2-en-1 - Garantie du fabricant 2 ans",
+	"image": "assets/img/pads/asus-zd300m.jpg",
+	"categorie": "pads",
+	"prix": 169.99
+}, {
+	"nom": "ACER Tablette Tactile - Iconia Tab 10",
+	"description": "Tablette Tactile Acer Iconia One 10 A3-A40-N6VP avec écran 10,1'' Full HD (1920 x 1200) IPS - Processeur MTK MT8163A Quad-core Cortex A53 1.5 GHz - Mémoire 2Go - Stockage 64Go - WiFi - Bluetooth - 1x Micro HDMI avec support HDCP - 1 x Micro USB 2.0 - MicroSD slot jusqu’à 128 Go - Caméra Avant 2.0 MP/Arrière 5.0 MP Auto Focus - Batterie 6100 mAh - Autonomie jusqu’à 8h - Android 6.0 - Noir - Garantie du fabricant 2 ans",
+	"image": "assets/img/pads/acer-tablette.jpg",
+	"categorie": "pads",
+	"prix": 249.99
+}, {
+	"nom": "Lenovo Tablette Tactile - TAB2 A10-30 - 10\"",
+	"description": "Tablette Tactile Lenovo TAB2 A10-30 avec écran 10'' HD (1280x800) IPS - Processeur Quad Core Qualcomm 1.3 Ghz MSM8009 32 bit - Mémoire 2 Go - Stockage 32 Go - WiFi - Bluetooth 4.0 - FM radio - Micro SD jusque 64 Go - Caméra avant 2 MP / arrière 5 MP - Son Dolby® Atmos Audio - Batterie 7000 mAh jusque 10h - Bleu - Android™ 5.1 - Garantie du fabricant 2 ans",
+	"image": "assets/img/pads/lenovo-tablette.jpg",
+	"categorie": "pads",
+	"prix": 154.99
+}, {
+	"nom": "LOGICOM Tablette Tactile - L-Ement Tab 1043 - 10,1\"",
+	"description": "Tablette Tactile Logicom L-EMENT TAB 1043 avec écran 10,1'' HD (1024x600) - Processeur Quad-core 1.3GHz - Mémoire 1Go - Stockage 16Go - WiFi - Port Micro SDHC jusqu'à 32Go - Micro USB - Caméra frontale 0,3 MP - Caméra dorsale 2MP - Batterie 5000 mAh - Blanc - Android 5.1 - Garantie du fabricant 2 ans",
+	"image": "assets/img/pads/logicom-tablette.jpg",
+	"categorie": "pads",
+	"prix": 83.99
+}, {
+	"nom": "ARCHOS Tablette Tactile - 70 Oxygen - 7\" ",
+	"description": "Tablette Tactile avec écran 7\" Full HD (1920 x 1200) IPS - Processeur Mediatek MTK 8163A Quad-Core @1.3 GHz Cortex A53 - Mémoire 2 Go - Stockage 32 Go - WiFi - Bluetooth - Micro HDMI - Micro USB (avec hôte USB via câble OTG) - Micro SD jusqu'à 64 Go - GPS / A-GPS - Caméra avant 2MP / arrière 5MP - Batterie 3000 mAh - Android 6.0 Marshmallow - Garantie du fabricant 2 ans",
+	"image": "assets/img/pads/archos-tablette.jpg",
+	"categorie": "pads",
+	"prix": 99.90
+}, {
+	"nom": "Artizlee Tablette Tactile ATL-16 7\" 8Go Blanc",
+	"description": "Artizlee ATL-16 7\" 8Go WiFi HD Blanche - Tablette tactile Artizlee avec écran 7” 1024 x 600 HD - Processeur Quad core ARM Cortex A7 1.2 GHz - Mémoire 512Mo - Stockage 8Go (possibilité d'étendre à 32Go via une carte mémoire flash) - Wifi - Bluetooth - Port micro SD - Micro USB - Caméra 0.3MP/2MP - Batterie 2500mAH - Google Play - Android™ 4.4 KitKat - Garantie 1 anPOLAROID Tablette Tactile + Housse - Infinite+ - 10,1'' HD - 1Go RAM - Android 5.1 ",
+	"image": "assets/img/pads/artizlee-tablette.jpg",
+	"categorie": "pads",
+	"prix": 39.99
+}, {
+	"nom": "POLAROID Tablette Tactile + Housse - Infinite+ - 10,1'' HD - 1Go RAM - Android 5.1 ",
+	"description": "Tablette Tactile Polaroid Infinite+ avec Housse Néoprène - 10,1'' HD (1024 x 600) 16/9 - Processeur Quad Core 1,5 GHz - Mémoire 1Go - Stockage 16Go - WiFi - Bluetooth - 3G WCDMA via USB - Micro USB 2.0 OTG - Port Micro SD jusqu'à 32 Go - Camera Frontale 0,3MP - Batterie 5000 MAH - Blanc - Android™ 5.1 - Garantie du fabricant 2 ans",
+	"image": "assets/img/pads/polaroid-tablette.jpg",
+	"categorie": "pads",
+	"prix": 89.99
+}]
