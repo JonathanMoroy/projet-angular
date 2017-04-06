@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.css">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa|Permanent+Marker" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
         <script src="assets/js/angular.js" type="text/javascript"></script>
@@ -12,10 +13,20 @@
     </head>
     <body ng-app="App">
         <div ng-controller="indexCtrl">
-          <div class="row">
-        <div class="col-lg-2">
+          <div class="row head_menu">
+        <div class="col-lg-3 col-xs-12 ">
           <header>
-            <nav class="navbar navbar-inverse navbar-static-top "  >
+            <nav class="navbar hidden-xs" ng-click="navbar_hide = !navbar_hide" >
+              <a class="navbar-brand col-lg-12 faa-wrench animated brand" href="#">Menu</a>
+              <ul ng-show="navbar_hide" class="col-lg-12 col-xs-12 ">
+                <li class="col-lg-12 col-xs-8"><a href="#!/computers">Computers</a></li>
+                <li class="col-lg-12 col-xs-8"><a href="#!/pads">Pads</a></li>
+                <li class="col-lg-12 col-xs-8"><a href="#!/phones">Phones</a></li>
+                <li class="col-lg-12 col-xs-8"><a  href="#!/watchs">Watchs</a></li>
+                <li class="col-lg-12 col-xs-8"><a href="#">panier</a></li>
+              </ul>
+            </nav>
+            <nav class="navbar navbar-fixed-top navbar-inverse hidden-lg hidden-md hidden-sm visible-xs" >
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbars" aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only"></span>
@@ -23,17 +34,47 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-
               </div>
               <ul id="navbars" class="col-lg-12 col-xs-12 ">
-                <li class="col-lg-12"><a class="navbar-brand" href="#">Be Connected</a></li>
+                <li class="col-lg-12 brand"><a class="navbar-brand" href="#">Be Connected</a></li>
                 <li class="col-lg-12 col-xs-8"><a href="#!/computers">Computers</a></li>
                 <li class="col-lg-12 col-xs-8"><a href="#!/pads">Pads</a></li>
                 <li class="col-lg-12 col-xs-8"><a href="#!/phones">Phones</a></li>
-                <li class="col-lg-12"><a  href="#!/watchs">Watchs</a></li>
+                <li class="col-lg-12 col-xs-8"><a  href="#!/watchs">Watchs</a></li>
+                <li class="col-lg-12 col-xs-8"><a href="#">panier</a></li>
               </ul>
             </nav>
           </header>
+        </div>
+        <div class="col-lg-9 col-xs-12 col-world">
+          <div class="col-lg-offset-2 col-lg-6 col-xs-offset-3 col-xs-6 row-world">
+            <div class="test_world">
+              <span class="span_world"><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-slow world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-slow world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+              <span><p class="faa-pulse animated slogan">TAKE THE CONTROL</p></span>
+            </div>
+
+          </div>
+
+            <hr>
+          <span id="theName">Be Connected</span>
+          <hr>
+
+
         </div>
       </div>
             <div ng-view>
@@ -42,7 +83,7 @@
 
             </footer>
         </div>
-        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/app.js" type="text/javascript"></script>
         <script src="assets/js/script.js" type="text/javascript"></script>
     </body>
