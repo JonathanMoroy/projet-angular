@@ -1,7 +1,7 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
+            var app = angular.module('myAppPhones', []);
+            app.controller('phonesCtrl', function ($scope, $http) {
+                $http.get("assets/json/phones.json")
+                        .then(function (flic) {
+                            $scope.phones = flic.data;
+                        });
+            });

@@ -1,3 +1,72 @@
-{
-    "name": "jonathan"
-}
+[
+       {
+           "nom": "Samsung Galaxy J3",
+           "descriptif": "Smartphone J3 Noir débloqué. Design compact avec un écran 5 pouces Super Amoled HD sur réseau 4G(catégorie 4),Wifi/Android Lollipop 5.1. Processeur Quad Core 1,5Ghz/Appareil Photo 8MP ",
+           "image": "assets/img/phones/samsung js 3.jpg",
+           "prix": 128.39,
+           "quantite": 0
+       },
+       {
+           "nom": "Honor 5C",
+           "descriptif": "Le Honor 5C mise sur un écran IPS Full HD dont la diagonale monte jusqu’à 5,2 pouces, avec des bordures naturellement un peu plus épaisses que chez les smartphones haut de gamme. Sous son capot, la marque a opté pour un SoC de milieu de gamme maison, le Kirin 650 (octo-cœur) couplé à 2 Go de RAM, le tout s’appuyant sur Android 6.0 Marshmallow associé à EMUI 4.1. Il lui a également inclus 16 Go d’espace de stockage, un port microSD ainsi qu’un capteur photo dorsal de 13 mégapixels, avec flash et mode HDR. ",
+           "image": "assets/img/phones/honor 5c.jpg",
+           "prix": 168.99,
+           "quantite": 0
+       },
+       {
+           "nom": "Apple iPhone 6",
+           "descriptif": "L'iPhone 6 n'est pas seulement plus grand en taille. Il est plus grand en tout. Plus large, mais beaucoup plus fin. Plus puissant, mais remarquablement économe en énergie. Sa surface lisse métallique épouse à merveille le nouvel écran Retina. Sous son design profilé s'opère une fusion parfaite entre matériel et logiciel. Redessinée, affûtée, perfectionnée, une nouvelle génération d'iPhone est née ",
+           "image": "assets/img/phones/iphone 6.jpg",
+           "prix": 505.00,
+           "quantite": 0
+       },
+       {
+           "nom": "Huawei Y5 II ",
+           "descriptif": "A l'intérieur de l'appareil se trouve un processeur à haute vitesse qui rend ce smartphone encore plus rapide et intelligent. Avec une texture 3D à motif, le Huawei Y3 arbore une surface premium et conçu avec un design simple mais élégant.",
+           "image": "assets/img/phones/huawei 5y II.jpg",
+           "prix": 108.99,
+           "quantite": 0
+       },
+       {
+           "nom": "Sony Xperia E5 ",
+           "descriptif": "Sony Xperia E5 16Go de mémoire interne Ecran 5 pouces HD Appareil photo principal 13MP avec Autofocus et 5MP en façade Batterie 2300 mAh Mode Stamina et mode ultra stamina Processeur Quad-Core 4 Android Marshmallow 6.0 Réseau 4G catégorie 4 Single Nano Sim Technologie sans fil NFC ",
+           "image": "assets/img/phones/xperia E55.jpg",
+           "prix": 148.89,
+           "quantite": 0
+       },
+       {
+           "nom": "Lenovo Zuk Z1",
+           "descriptif": "Le Zuk 1 possède une Touch ID pour identification par empreintes digitales. Il propose les caractéristiques suivantes : Capteur Hall Effect, Accéléromètre, Gyroscope, Capteur de proximité infrarouge, Capteur de lumière ambiante, Capteur tactile, Boussole numérique. Doté d'un écran 5,5 pouces Full HD IPS LCD, résolution : 1920 x 1080 et d'un processeur Qualcomm Snapdragon 801. Caractéristiques de l'appareil photo : 13MP f/2.2 ISO100 (capteur Sony Emo RS IMX 214), lentille Largen, gyroscope OIS. - Flash double couleur, Mode rafale, lentille panoramique, filtre en verre bleu, détection de visage.",
+           "image": "assets/img/phones/zuk z1.jpg",
+           "prix": 379.97,
+           "quantite": 0
+       },
+       {
+           "nom": "LG H791",
+           "descriptif": "e meilleur appareil photo «à tout faire» jamais intégré à un Nexus fait des étincelles même par faible luminosité. Avec ses 1,55μm pixels, il capte plus de lumière dans l’obscurité pour des images nettes et des détails somptueux. Grâce à l’application Google Camera encore plus rapide, plus aucun moment important ne t’échappe. Quant à l’appli intelligente Google Photos, elle te permet de revivre tous tes souvenirs du bout des doigts. ",
+           "image": "assets/img/phones/lg h791.jpg",
+           "prix": 293.00,
+           "quantite": 0
+       },
+       {
+           "nom": "Lenovo Moto G4 Plus",
+           "descriptif": " Exécutez plusieurs applications simultanément sans aucun problème de ralentissement grâce au processeur octa-core 1.5GHz et la vitesse 4G.Le nouveau Moto G vous offre une expérience unique. Stimulez vos performances grâce à une version d'Android pure et sans couches logicielles, ni autres éléments superflus qui risqueraient de vous ralentir. ",
+           "image": "assets/img/phones/lenovo moto g4 plus.jpg",
+           "prix": 261.55,
+           "quantite": 0
+       },
+       {
+           "nom": "Microsoft Lumia 650",
+           "descriptif": " La technologie avancée Microsoft. Obtenez un aperçu personnalisé de votre journée avec des infos sur le trafic, les prévisions météo et votre emploi du temps, énoncés par Cortana. Prenez de superbes photos grâce au capteur de 8 mégapixels, synchronisées automatiquement sur tous vos appareils Windows 10 dans l'appli Photos.",
+           "image": "assets/img/phones/Microsoft Lumia 650.jpg",
+           "prix": 123.99,
+           "quantite": 0
+       },
+       {
+           "nom": "Wiko Jerry",
+           "descriptif": "Grand écran 5 pouces IPS, Design métal élégant avec contour coloré, Android 6,0 (Marshmallow), Processeur Quad-Core ultra performant, Appareil photo 5 MP avec de nombreuses options : Panorama, Smile Shot, Facebeauty ",
+           "image": "assets/img/phones/wiko Jerry.jpg",
+           "prix": 74.98,
+           "quantite": 0
+       }
+]
