@@ -7,15 +7,15 @@
         <script src="assets/js/angular-route.js" type="text/javascript"></script>
         <script src="assets/js/jquery.js" type="text/javascript"></script>
         <meta charset="utf-8">
-        <title></title>
+        <title>Computers</title>
     </head>
     <!-- On initialise l'application avec ng-app et on déclare le contrôleur "computersCtrl" -->
     <body ng-app="computersApp" ng-controller="computersCtrl">
         <!-- On répète la div pour le nombre de computers avec le ng-repeat -->
-        <div class="container">
-        <div class="col-lg-6" ng-repeat="computer in computers">
+        <div class="container-fluid">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-repeat="computer in computers">
             <!-- On affiche les différentes infos des computers -->
-            <h2 class="article_titre">Nom du pc portable : {{computer.nom}}</h2> 
+            <h2 class="article_titre">Nom du pc portable : <em>{{computer.nom}}</em></h2> 
             <img class='article_image' src="{{computer.image}}" alt="Les images"/>
             <p class='article_descriptif'><strong>Descriptif : </strong>{{computer.descriptif}}</p>
             <p class="article_prix"><strong>Prix : </strong>{{computer.prix| currency:'€'}}</p>
