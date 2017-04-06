@@ -4,7 +4,7 @@
         <div ng-repeat="phone in phones" class ="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div>
                 <h2 class="article_title"><em>{{phone.nom}}</em></h2>
-                <img class="article_image" src="{{phone.image}}" alt="Image du smartphone"/>
+                <img class="article_image img-responsive" src="{{phone.image}}" alt="Image du smartphone"/>
                 <p class="article_description"><strong>Description: </strong>{{phone.descriptif}}</p>
                 <p><strong>Prix: </strong>{{phone.prix|currency:'€'}}</p>
             </div>

@@ -4,8 +4,8 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-repeat="computer in computers">
             <div>
                 <h2 class="article_title"><em>{{computer.nom}}</em></h2> 
-                <img class="article_image" src="{{computer.image}}" alt="Image de l'ordinateur"/>
-                <p class="article_description"><strong>Descriptif : </strong>{{computer.descriptif}}</p>
+                <img class="article_image img-responsive" src="{{computer.image}}" alt="Image de l'ordinateur"/>
+                <p class="article_description"><strong>Description: </strong>{{computer.descriptif}}</p>
                 <p><strong>Prix: </strong>{{computer.prix| currency:'€'}}</p>  
             </div>
         </div>

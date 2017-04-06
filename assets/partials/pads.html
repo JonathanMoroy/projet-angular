@@ -4,7 +4,7 @@
         <div ng-repeat="data in tabs" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div>
                 <h2 class="article_title">{{data.nom}}</h2>
-                <img class="article_image" src="{{data.image}}" alt="Image de la tablette"/>
+                <img class="article_image img-responsive" src="{{data.image}}" alt="Image de la tablette"/>
                 <p class="article_description"><strong>Description: </strong>{{data.description}}</p>
                 <p><strong>Prix: </strong>{{data.prix| currency: '€'}}</p>
             </div>
