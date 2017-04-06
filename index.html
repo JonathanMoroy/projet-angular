@@ -9,7 +9,17 @@
         <meta charset="utf-8">
         <title></title>
     </head>
-    <body>
+    <!-- On initialise l'application avec ng-app et on déclare le contrôleur "computersCtrl" -->
+    <body ng-app="computersApp" ng-controller="computersCtrl">
+        <!-- On répète la div pour le nombre de computers avec le ng-repeat -->
+    <div class="computers_div" ng-repeat="computer in computers">
+      <!-- On affiche les différentes infos des computers -->
+      <p><strong>Nom du pc portable : </strong>{{computer.nom}}</p> <br> 
+      <p><strong>Image : </strong><img src="{{computer.image}}" alt="Les images"/></p><br>
+      <p><strong>Descriptif : </strong>{{computer.descriptif}}</p> <br>
+      <p><strong>Prix : </strong>{{computer.prix | currency:'€'}}</p> <br>
+          <!--<p><strong>Quantité : </strong>{{computer.quantité}}</p>-->     
+    </div>
         <script src="assets/js/app.js" type="text/javascript"></script>
         <script src="assets/js/script.js" type="text/javascript"></script>
     </body>
