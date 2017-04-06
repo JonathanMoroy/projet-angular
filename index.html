@@ -12,14 +12,16 @@
     <!-- On initialise l'application avec ng-app et on déclare le contrôleur "computersCtrl" -->
     <body ng-app="computersApp" ng-controller="computersCtrl">
         <!-- On répète la div pour le nombre de computers avec le ng-repeat -->
-    <div class="computers_div" ng-repeat="computer in computers">
-      <!-- On affiche les différentes infos des computers -->
-      <p><strong>Nom du pc portable : </strong>{{computer.nom}}</p> <br> 
-      <p><strong>Image : </strong><img src="{{computer.image}}" alt="Les images"/></p><br>
-      <p><strong>Descriptif : </strong>{{computer.descriptif}}</p> <br>
-      <p><strong>Prix : </strong>{{computer.prix | currency:'€'}}</p> <br>
-          <!--<p><strong>Quantité : </strong>{{computer.quantité}}</p>-->     
-    </div>
+        <div class="container">
+        <div class="col-lg-6" ng-repeat="computer in computers">
+            <!-- On affiche les différentes infos des computers -->
+            <h2 class="article_titre">Nom du pc portable : {{computer.nom}}</h2> 
+            <img class='article_image' src="{{computer.image}}" alt="Les images"/>
+            <p class='article_descriptif'><strong>Descriptif : </strong>{{computer.descriptif}}</p>
+            <p class="article_prix"><strong>Prix : </strong>{{computer.prix| currency:'€'}}</p>
+            <!--<p class="article_quantité"><strong>Quantité : </strong>{{computer.quantité}}</p>-->     
+        </div>
+        </div>
         <script src="assets/js/app.js" type="text/javascript"></script>
         <script src="assets/js/script.js" type="text/javascript"></script>
     </body>

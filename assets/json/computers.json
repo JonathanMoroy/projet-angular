@@ -9,7 +9,7 @@
         {
     "nom" : "HP Pavilion 14",
     "descriptif" : "Avec son châssis argent naturel et son design épuré, l'ordinateur portable HP Pavilion 14-al101nf vous apporte les mêmes avantages qu'un ordinateur de bureau. Disposant d'un écran WLED 14p HD, il est parfaitement fiable et adapté à la gestion de votre univers multimédia au quotidien. Avec ses multiples ports de connectivité, il a spécialement été conçu pour optimiser votre productivité en toutes circonstances et vous apporter entière satisfaction.",
-    "image" : "assets/img/computers/ hp_pavilion14.jpg",
+    "image" : "assets/img/computers/hp_pavilion14.jpg",
     "prix" : 679.15,
     "quantité" : 5
 },
@@ -51,7 +51,7 @@
     {
     "nom" : "ASUS X555YI-XX150T",
     "descriptif" : "Le PC portable ASUS X555YI-XX150T  arbore  un design blanc d'une finesse optimale. Il intègre de nombreuses technologies pour  un équilibre parfait entre beauté et puissance. Il vous apporte le meilleur de la technologie dans vos usages multimédia, qu'il s'agisse de vous divertir ou de travailler. Son processeur AMD Quad Core A8-7410, sa carte graphique AMD Radeon R5 M320 et ses multiples connectiques offrent une nouvelle dimension à vos contenus. ",
-    "image" : "assets/img/computers/ asus_x555yi.jpg",
+    "image" : "assets/img/computers/asus_x555yi.jpg",
     "prix" : 449,
     "quantité" : 5 
 },
