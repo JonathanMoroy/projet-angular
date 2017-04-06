@@ -37,8 +37,11 @@ App.controller('phonesCtrl', ['$scope', function ($scope) {
         // Configuration de mon contrôleur resume
     }]);
 
-App.controller('padsCtrl', ['$scope', function ($scope) {
+App.controller('padsCtrl', ['$scope', '$http', function ($scope, $http) {
         // Configuration de mon contrôleur contact
+      $http.get("assets/json/pads.json").then(function(res) {
+        $scope.tabs = res.data;
+      });
     }]);
 
 App.controller('watchsCtrl', ['$scope', '$http', function ($scope, $http) {
