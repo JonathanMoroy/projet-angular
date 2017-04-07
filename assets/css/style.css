@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fond-clair1.jpg);
+    background-image: url(../img/design.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'Comfortaa', cursive;
@@ -34,7 +34,7 @@ h1{
     color: #4169E1 ;
     margin-bottom: 50px;
     text-align: center;
-    background-color: rgba(81,141,193, 0.5);
+    background-color: rgba(51,204,0, 0.5);
     border-radius: 30px;
     box-shadow: 6px 6px 50px black;
 }
