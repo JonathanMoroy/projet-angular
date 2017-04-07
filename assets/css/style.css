@@ -29,13 +29,8 @@ h1{
     font-size: 30px;
     color: #4169E1;
 }
-.buttonPanel{
-    background-color: #000\9;
-    height: 50px;
-    width: 70px;
-}
 .ion-ios-cart{
-    font-size: 200%;
+    font-size: 300%;
 }
 .buttonClose{
     background-color: #00B34E;
