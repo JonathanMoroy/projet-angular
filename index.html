@@ -28,9 +28,18 @@
                                     <h4 class="modal-title">Panier</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <!--<div ng-repeat>
-                                        <p>N'importe quoi</p>
-                                    </div> -->
+
+                                    <div ng-repeat="cart in carts">
+
+                                        <table>
+
+                                            <tr>
+                                                <td><p>Article: {{cart.name}} <img style="height: 50px;" src="{{cart.img}}"/> <button type="button" ng-click="remove()">Supprimer</button></p></td>
+                                                <td style="width: 200px; text-align: right;"><p>prix: {{cart.price}}</p></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="buttonClose" data-dismiss="modal">Fermer</button>

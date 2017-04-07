@@ -29,7 +29,9 @@ App.config(['$routeProvider', function ($routeProvider) {
 
 App.controller('indexCtrl', ['$scope', function ($scope) {
         // Configuration de mon contrôleur index
-
+        $scope.remove = function ($index) {
+          $scope.carts.splice(this.$index, 1);
+      };
     }]);
 
 App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
