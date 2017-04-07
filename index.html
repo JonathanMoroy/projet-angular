@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.css">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa|Permanent+Marker" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
         <script src="assets/js/angular.js" type="text/javascript"></script>
@@ -13,20 +14,140 @@
     <body ng-app="App">
         <div ng-controller="indexCtrl">
             <header>
-                <ul>
-                    <li><a href="#!/computers">Computers</a></li>
-                    <li><a href="#!/pads">Pads</a></li>
-                    <li><a href="#!/phones">Phones</a></li>
-                    <li><a href="#!/watchs">Watchs</a></li>                 
-                </ul>
-            </header>
+                <div class="row head_menu">
+                    <div class="col-lg-3 col-xs-12 ">
+                        <nav class="navbar hidden-xs" ng-click="navbar_hide = !navbar_hide" >
+                            <p class="navbar-brand col-lg-12 brand"><a class="" href="#">Menu</a></p>
+                            <ul ng-show="navbar_hide" class="col-lg-12 col-xs-12 ">
+                                <li class="col-lg-12 col-xs-8"><a href="#!/computers">Computers</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#!/pads">Pads</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#!/phones">Phones</a></li>
+                                <li class="col-lg-12 col-xs-8"><a  href="#!/watchs">Watchs</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#">panier</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar navbar-fixed-top navbar-default hidden-lg hidden-md hidden-sm visible-xs" >
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbars" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <ul id="navbars" class="col-lg-12 col-xs-12 ">
+                                <li class="col-lg-12 brand"><a class="navbar-brand" href="#">Be Connected</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#!/computers">Computers</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#!/pads">Pads</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#!/phones">Phones</a></li>
+                                <li class="col-lg-12 col-xs-8"><a  href="#!/watchs">Watchs</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#">panier</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-9 col-xs-12 col-world">
+                        <div class="col-lg-offset-2 col-lg-6 col-xs-offset-3 col-xs-6 row-world">
+                            <div class="test_world">
+                                <span class="span_world"><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-slow world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-slow world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated faa-fast world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-slow"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-passing animated world faa-fast"><strong>The world move so fast</strong></p><p class="faa-passing-reverse animated world faa-slow"><strong>The world move so fast</strong></p></span>
+                                <span><p class="faa-pulse animated slogan">TAKE THE CONTROL</p></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <span id="theName">Be Connected</span>
+                        <hr>
+                    </div>
+                </div>
+            </header>  
             <div ng-view>
             </div>
+            <!-- Début modale à propos -->
+            <div class="row modal_row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div id="propos" class="modal fade" role="dialog">
+                        <div class="modal-dialog .modal-sm .modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">À Propos : Equipe de Développement</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="col-lg-12"><span><strong>Valérie Jardin</strong> (alias !Romantique ) Il etait seul, j'étais seul, on s'est dit pourquoi pas...</span></div><br><br>
+                                    <hr>
+                                    <div class="col-lg-12"><span><strong>Jonathan Moroy</strong> (alias Master Chef) C'est pas faux</span></div><br><br>
+                                    <hr>
+                                    <div class="col-lg-12"><span><strong>Audrey Lesterin</strong> (alias Stitch) Serveur Error</span></div><br><br>
+                                    <hr>
+                                    <div class="col-lg-12"><span><strong>Wilfried Bobo</strong> (alias L'Insaisissable) Il est si triste de vivre dans sans semblable</span></div><br><br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Début modale contact -->
+                <div class="col-lg-9 col-lg-offset-3">
+                    <div id="contact" class="modal fade" role="dialog">
+                        <div class="modal-dialog .modal-sm .modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Contact</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="user_info" method="POST" action="assets/formulaire.json" >
+                                        <input class="col-lg-6 contact_content" type="text" id="nom" name="nom" value="" placeholder="Nom">
+                                        <input class="col-lg-6  contact_content" type="text" id="prenom" name="prenom" value="" placeholder="Prenom"><br>
+                                        <input class="col-lg-6 contact_content" type="email" id="email" name="email" value="" placeholder="E-mail"><br>
+                                        <input class="col-lg-6  contact_content" type="text" id="num_adresse" name="num_adresse" value="" placeholder="Numero de la rue">
+                                        <input class="col-lg-6  contact_content" type="text" id="code_postal" name="Code Postal" value="" placeholder="Code Postal"><br>
+                                        <textarea class="col-lg-12 contact_content" name="name" id="adresse" rows="4"  placeholder="Adresse"></textarea><br>
+                                    </form>
+                                </div>
+                                <hr>
+                                <div class="modal-footer">
+                                    <button class="col-lg-2 col-lg-offset-5" type="submit" id="envoie" name="button"> Valider</button><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer>
+                <nav class="navbar-fixed-bottom navbar-inverse">
+                    <div class="row modal_row">
+                        <ul>
+                            <li class="col-lg-1 col-xs-2"><a href="#!/computers">Computers</a></li>
+                            <li class="col-lg-1 col-xs-2"><a href="#!/pads">Pads</a></li>
+                            <li class="col-lg-1 col-xs-2"><a href="#!/phones">Phones</a></li>
+                            <li class="col-lg-1 col-xs-2"><a  href="#!/watchs">Watchs</a></li>
+                            <li class="col-lg-offset-5 col-lg-2 col-xs-2" id="aboutUs"><a href="#" data-toggle="modal" data-target="#propos">À propos</a></li>
+                            <li class="col-lg-1 col-xs-2"><a href="#" data-toggle="modal" data-target="#contact">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
             </footer>
         </div>
-
-        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/app.js" type="text/javascript"></script>
         <script src="assets/js/script.js" type="text/javascript"></script>
         <script src="https://use.fontawesome.com/fe98546356.js"></script>
