@@ -53,6 +53,30 @@ h1{
 }
 
 /* Début du style du header et footer */
+/* Contenu du modal */
+.modal-content {
+    background-color: #A7C6E0; 
+    box-shadow: 6px 6px 50px black;   
+}
+.modal-title{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: #4169E1;
+}
+.buttonPanel- {
+    color: #6584E5;
+}
+
+.ion-ios-cart{
+    color: #6584E5;
+}
+.buttonClose{
+    background-color: rgba(51,204,0, 0.5);
+    font-family:'Permanent Marker', cursive;
+    color: #4169E1;
+    font-size: 20px;
+    border-radius: 30px;
+}
 
 li{
     list-style: none;
@@ -215,4 +239,3 @@ textarea{
     margin: 0;
     padding: 0;
 }
-

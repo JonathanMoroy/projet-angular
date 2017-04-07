@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="assets/css/font-awesome-animation.css">
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.css">   
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa|Permanent+Marker" rel="stylesheet">
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
         <script src="assets/js/angular.js" type="text/javascript"></script>
         <script src="assets/js/angular-route.js" type="text/javascript"></script>
         <script src="assets/js/jquery.js" type="text/javascript"></script>
@@ -14,6 +16,30 @@
     <body ng-app="App">
         <div ng-controller="indexCtrl">
             <header>
+                <!-- Début de la modale panier -->
+                <div class="container">
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Contenu du modal-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Panier</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <!--<div ng-repeat>
+                                        <p>N'importe quoi</p>
+                                    </div> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="buttonClose" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de la modale panier -->
                 <div class="row head_menu">
                     <div class="col-lg-3 col-xs-12 ">
                         <nav class="navbar hidden-xs" ng-click="navbar_hide = !navbar_hide" >
@@ -23,7 +49,7 @@
                                 <li class="col-lg-12 col-xs-8"><a href="#!/pads">Pads</a></li>
                                 <li class="col-lg-12 col-xs-8"><a href="#!/phones">Phones</a></li>
                                 <li class="col-lg-12 col-xs-8"><a  href="#!/watchs">Watchs</a></li>
-                                <li class="col-lg-12 col-xs-8"><a href="#">panier</a></li>
+                                <li class="col-lg-12 col-xs-8"><button type="button" class="buttonPanel-" data-toggle="modal" data-target="#myModal"><i class="ion-ios-cart" aria-hidden="true"></i> Mon Panier</button></li>
                             </ul>
                         </nav>
                         <nav class="navbar navbar-fixed-top navbar-default hidden-lg hidden-md hidden-sm visible-xs" >
@@ -41,7 +67,7 @@
                                 <li class="col-lg-12 col-xs-8"><a href="#!/pads">Pads</a></li>
                                 <li class="col-lg-12 col-xs-8"><a href="#!/phones">Phones</a></li>
                                 <li class="col-lg-12 col-xs-8"><a  href="#!/watchs">Watchs</a></li>
-                                <li class="col-lg-12 col-xs-8"><a href="#">panier</a></li>
+                                <li class="col-lg-12 col-xs-8"><button type="button" class="buttonPanel-" data-toggle="modal" data-target="#myModal"><i class="ion-ios-cart" aria-hidden="true"></i> Mon Panier</button></li>
                             </ul>
                         </nav>
                     </div>
@@ -89,11 +115,11 @@
                                 <div class="modal-body">
                                     <div class="col-lg-12"><span><strong>Valérie Jardin</strong> (alias !Romantique ) Il etait seul, j'étais seul, on s'est dit pourquoi pas...</span></div><br><br>
                                     <hr>
-                                    <div class="col-lg-12"><span><strong>Jonathan Moroy</strong> (alias Master Chef) C'est pas faux</span></div><br><br>
+                                    <div class="col-lg-12"><span><strong>Jonathan Moroy</strong> (alias Master Chief) C'est pas faux</span></div><br><br>
                                     <hr>
-                                    <div class="col-lg-12"><span><strong>Audrey Lesterin</strong> (alias Stitch) Serveur Error</span></div><br><br>
+                                    <div class="col-lg-12"><span><strong>Audrey Lesterlin</strong> (alias Stitch) Serveur Error</span></div><br><br>
                                     <hr>
-                                    <div class="col-lg-12"><span><strong>Wilfried Bobo</strong> (alias L'Insaisissable) Il est si triste de vivre dans sans semblable</span></div><br><br>
+                                    <div class="col-lg-12"><span><strong>Wilfried Bobo</strong> (alias L'Insaisissable) Il est si triste de vivre sans semblable</span></div><br><br>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
