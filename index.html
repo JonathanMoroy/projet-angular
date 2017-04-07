@@ -28,20 +28,17 @@
                                     <h4 class="modal-title">Panier</h4>
                                 </div>
                                 <div class="modal-body">
-
                                     <div ng-repeat="cart in carts">
-
                                         <table>
-
                                             <tr>
-                                                <td><p>Article: {{cart.name}} <img style="height: 50px;" src="{{cart.img}}"/> <button type="button" ng-click="remove()">Supprimer</button></p></td>
-                                                <td style="width: 200px; text-align: right;"><p>prix: {{cart.price}}</p></td>
+                                                <td><p>Article: {{cart.name}} <img style="height: 50px;" src="{{cart.img}}" alt="image de l'article"/> <button type="button" ng-click="remove()">Supprimer</button></p></td>
+                                                <td style="width: 200px; text-align: right;"><button ng-init="count = 1" ng-click="count = count + 1">+</button><button ng-click="count = count - 1">-</button><p><strong>Nbr: </strong>{{count}} <strong>prix: </strong>{{cart.price * count | currency:'€'}}</p></td>
                                             </tr>
                                         </table>
-                                    </div>
-
+                                    </div> 
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="submit">Acheter</button>
                                     <button type="button" class="buttonClose" data-dismiss="modal">Fermer</button>
                                 </div>
                             </div>
