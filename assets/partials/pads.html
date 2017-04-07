@@ -6,7 +6,7 @@
                 <h2 class="article_title">{{data.nom}}</h2>
                 <img class="article_image img-responsive" src="{{data.image}}" alt="Image de la tablette"/>
                 <p class="article_description"><strong>Description: </strong>{{data.description}}</p>
-                <p><strong>Prix: </strong>{{data.prix| currency: '€'}}</p>
+                <p><strong>Prix: </strong>{{data.prix| currency: '€'}} <a href=""><i class="fa fa-cart-plus buy_icon" aria-hidden="true" ng-click="addCart()"></i></a></p>
             </div>
         </div>
     </div>

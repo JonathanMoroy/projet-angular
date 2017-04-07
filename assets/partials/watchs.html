@@ -6,7 +6,7 @@
                 <h2 class="article_title"><em>{{watch.nom}}</em></h2>
                 <img class="article_image img-responsive" src="{{watch.image}}" alt="Image de la montre"/>
                 <p class="article_description"><strong>Description: </strong>{{watch.descriptif}}</p>
-                <p><strong>Prix: </strong>{{watch.prix |currency:'€'}}</p>
+                <p><strong>Prix: </strong>{{watch.prix |currency:'€'}} <a href=""><i class="fa fa-cart-plus buy_icon" aria-hidden="true" ng-click="addCart()"></i></a></p>
             </div>
         </div>
     </div>

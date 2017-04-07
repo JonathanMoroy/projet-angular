@@ -1,8 +1,11 @@
-var App = angular.module('App', ['ngRoute']);
+var App = angular.module('App', ['ngRoute'])
+        .run(function ($rootScope) {
+            $rootScope.carts = [];
+        });
 
 
 App.config(['$routeProvider', function ($routeProvider) {
-        $routeProvider               
+        $routeProvider
                 .when('/computers', {
                     templateUrl: 'assets/partials/computers.html',
                     controller: 'computersCtrl'
@@ -36,6 +39,14 @@ App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
                 .then(function (res) {
                     $scope.computers = res.data;
                 });
+        // Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global
+        $scope.addCart = function () {
+            $scope.carts.push({
+                name: this.computer.nom,
+                img: this.computer.image,
+                price: this.computer.prix
+            });
+        };
     }]);
 
 App.controller('phonesCtrl', ['$scope', '$http', function ($scope, $http) {
@@ -44,13 +55,30 @@ App.controller('phonesCtrl', ['$scope', '$http', function ($scope, $http) {
                 .then(function (flic) {
                     $scope.phones = flic.data;
                 });
+        // Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global
+        $scope.addCart = function () {
+            $scope.carts.push({
+                name: this.phone.nom,
+                img: this.phone.image,
+                price: this.phone.prix
+            });
+        };
     }]);
 
 App.controller('padsCtrl', ['$scope', '$http', function ($scope, $http) {
         // Configuration de mon contrôleur contact
-        $http.get("assets/json/pads.json").then(function (res) {
-            $scope.tabs = res.data;
-        });
+        $http.get("assets/json/pads.json")
+                .then(function (res) {
+                    $scope.tabs = res.data;
+                });
+        // Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global
+        $scope.addCart = function () {
+            $scope.carts.push({
+                name: this.data.nom,
+                img: this.data.image,
+                price: this.data.prix
+            });
+        };
     }]);
 
 App.controller('watchsCtrl', ['$scope', '$http', function ($scope, $http) {
@@ -59,4 +87,12 @@ App.controller('watchsCtrl', ['$scope', '$http', function ($scope, $http) {
                 .then(function (res) {
                     $scope.watchs = res.data;
                 });
+        // Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global
+        $scope.addCart = function () {
+            $scope.carts.push({
+                name: this.watch.nom,
+                img: this.watch.image,
+                price: this.watch.prix
+            });
+        };
     }]);
