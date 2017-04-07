@@ -19,3 +19,26 @@ h1{
    border-radius: 30px;
    box-shadow: 6px 6px 50px black;
 }
+/* Contenu du modal */
+.modal-content {
+    background-color: #A7C6E0; 
+    box-shadow: 6px 6px 50px black;   
+}
+.modal-title{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: #4169E1;
+}
+.buttonPanel{
+    background-color: #000\9;
+    height: 50px;
+    width: 70px;
+}
+.ion-ios-cart{
+    font-size: 200%;
+}
+.buttonClose{
+    background-color: #00B34E;
+    font-family:'Permanent Marker', cursive;
+    font-size: 20px;
+}
