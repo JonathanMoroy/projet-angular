@@ -9,9 +9,10 @@ html, body{
 }
 .article_image{
    height: 300px;
+   padding-left: 10%;
 }
 .article_description{
-   height: 200px;
+  height: 200px;
    word-wrap: break-word;
    overflow: auto;
 }
@@ -28,7 +29,27 @@ h1{
 li{
 list-style: none;
 }
-
+footer{
+  margin-top: 50px;
+  margin-right: 0;
+  margin-left: 0;
+}
+footer .navbar-inverse{
+  opacity: 0.8;
+  margin-top: 50px;
+  height: 30px;
+  padding: 5px;
+  margin-right: 0;
+  padding: 0;
+  width: 100%;
+}
+footer .navbar-inverse a{
+  color: white;
+}
+footer .navbar-inverse a:hover{
+  text-decoration: none;
+  text-transform: full-width;
+}
 @media (min-width:768px) {
   .navbar li {
   margin-left: 0;
@@ -39,6 +60,11 @@ list-style: none;
     font-size: 20px;
     color: #4169E1;
   }
+  .navbar a:hover{
+    text-transform: full-width;
+    text-shadow: 2px 1px 2px white;
+    text-decoration: none;
+  }
   .navbar{
   /*height: 200px;*/
   background-color: lightblue;
@@ -48,12 +74,15 @@ list-style: none;
    text-align: center;
    z-index: 2;
    opacity: 0.8;
+   outline: none;
   }
   .brand a{
   font-size: 30px;
   color: darkgrey;
   margin-top: 10px;
   padding-top: 0;
+  outline: none;
+  text-decoration: none;
   }
   #theName{
     font-size: 30px;
@@ -121,5 +150,14 @@ list-style: none;
   .slogan{
     font-size: 10px;
   }
-
+}
+textarea{
+  resize: none;
+}
+.contact_content{
+  margin-bottom: 10px;
+}
+.modal_row{
+  margin: 0;
+  padding: 0;
 }
