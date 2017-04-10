@@ -44,15 +44,7 @@ App.controller('indexCtrl', ['$scope', function ($scope) {
           $scope.carts.splice(this.$index, 1);
       };
         // Configuration de mon controleur addQuantity
-        $scope.addQuantity = /**
-         * Comment
-         */
-                function name(parameters) {
-                    
-                }
-                function name(parameters) {
-                    
-                }
+
     }]);
 // Computers
 App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
