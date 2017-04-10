@@ -24,22 +24,25 @@
                             <!-- Contenu du modal-->
                             <div class="modal-content">
                                 <div class="modal-header">
+                                    <!-- Croix pour fermer la fenêtre modale -->
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     <h4 class="modal-title">Panier</h4>
                                 </div>
                                 <div class="modal-body">
-
                                     <div ng-repeat="cart in carts">
-
                                         <table>
-
                                             <tr>
-                                                <td><p>Article: {{cart.name}} <img style="height: 50px;" src="{{cart.img}}"/> <button type="button" ng-click="remove()">Supprimer</button></p></td>
-                                                <td style="width: 200px; text-align: right;"><p>prix: {{cart.price}}</p></td>
+                                                <td><p>{{cart.name}} <img style="height: 50px;" src="{{cart.img}}" alt="Image de l'article"/><button type="button" ng-click="remove()">Supprimer</button></p></td>
                                             </tr>
-                                        </table>
+                                        </table>                                                                         
                                     </div>
-
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <td style="width: 200px; text-align: right;"><p>Total :</p></td>
+                                            </tr>  
+                                        </table>       
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="buttonClose" data-dismiss="modal">Fermer</button>

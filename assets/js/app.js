@@ -1,9 +1,15 @@
+/* Déclaration du module avec ngRoute qui permet d'aller sur la bonne page html / tableau json  
+en fonction du produit choisi */
 var App = angular.module('App', ['ngRoute'])
         .run(function ($rootScope) {
-            $rootScope.carts = [];
+                    /* Déclaration d'un $rootScope.carts = [] qui a une valeur pour l'ensemble 
+                     du site pour notre panier  */          
+                    $rootScope.carts = [];
         });
 
-
+/* Déclaration des différentes routes càd les chemins pour ouvrir la bonne page html 
+en fonction des page ouvertes par le client */
+        
 App.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
                 .when('/computers', {
@@ -22,18 +28,33 @@ App.config(['$routeProvider', function ($routeProvider) {
                     templateUrl: 'assets/partials/watchs.html',
                     controller: 'watchsCtrl'
                 })
+                /* Si mauvaise information demandée retour à la page computers qui pour notre 
+                site est la page d'accueil */                
                 .otherwise({
                     redirectTo: '/computers'
                 });
     }]);
 
+// Déclaration des différents controleurs nécessaire au site :
+
+// Index
 App.controller('indexCtrl', ['$scope', function ($scope) {
-        // Configuration de mon contrôleur index
+        // Configuration de mon contrôleur index : fonction du bouton supprimer UN seul élément
         $scope.remove = function ($index) {
           $scope.carts.splice(this.$index, 1);
       };
+        // Configuration de mon controleur addQuantity
+        $scope.addQuantity = /**
+         * Comment
+         */
+                function name(parameters) {
+                    
+                }
+                function name(parameters) {
+                    
+                }
     }]);
-
+// Computers
 App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
         // Configuration de mon contrôleur home
         $http.get('assets/json/computers.json')
@@ -41,7 +62,8 @@ App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
                 .then(function (res) {
                     $scope.computers = res.data;
                 });
-        // Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global
+        /* Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global 
+         à déclarer pour chaque type d'articles */
         $scope.addCart = function () {
             $scope.carts.push({
                 name: this.computer.nom,
@@ -50,14 +72,15 @@ App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
             });
         };
     }]);
-
+// Phones
 App.controller('phonesCtrl', ['$scope', '$http', function ($scope, $http) {
         // Configuration de mon contrôleur resume
         $http.get("assets/json/phones.json")
                 .then(function (flic) {
                     $scope.phones = flic.data;
                 });
-        // Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global
+        /* Fonction qui envoie les informations de l'article dans un nouveau tableau qui est global
+         pour que ces infos soit envoyer dans le panier lors du shopping client */
         $scope.addCart = function () {
             $scope.carts.push({
                 name: this.phone.nom,
@@ -66,7 +89,7 @@ App.controller('phonesCtrl', ['$scope', '$http', function ($scope, $http) {
             });
         };
     }]);
-
+// Pads
 App.controller('padsCtrl', ['$scope', '$http', function ($scope, $http) {
         // Configuration de mon contrôleur contact
         $http.get("assets/json/pads.json")
@@ -82,7 +105,7 @@ App.controller('padsCtrl', ['$scope', '$http', function ($scope, $http) {
             });
         };
     }]);
-
+// Watchs
 App.controller('watchsCtrl', ['$scope', '$http', function ($scope, $http) {
         // Configuration de mon contrôleur project
         $http.get('assets/json/watchs.json')
