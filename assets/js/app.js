@@ -146,4 +146,4 @@ App.controller('watchsCtrl', ['$scope', '$http', function ($scope, $http) {
                 quantity: 1
             });
         };
-}]);
+    }]);

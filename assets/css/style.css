@@ -194,6 +194,12 @@ footer ul {
     }
 }
 
+@media (max-width:992px) {
+    .article_title {
+        font-size: 16px;
+    }
+}
+
 @media (max-width:767px) {
     .world{
         color: red;
