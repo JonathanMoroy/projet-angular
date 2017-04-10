@@ -1,6 +1,15 @@
 var App = angular.module('App', ['ngRoute'])
         .run(function ($rootScope) {
             $rootScope.carts = [];
+            // Merci @Coco :D
+            $rootScope.total = function () { //sur la valeur total
+                var total = 0;
+                for (var i = 0; i < $rootScope.carts.length; i++) { //on lance une boucle qui itère la longueure du tableau items
+                    total += ($rootScope.carts[i].quantity * $rootScope.carts[i].price);  //ensuite, la variable total concatène (+=) la multiplication de la quantité du tableau items via l'indice i et le prix du tableau items via l'indice i
+                }
+                ;
+                return total; //on retourne la variable total après notre fonction pour qu'elle soit disponible
+            };
         });
 
 
@@ -30,8 +39,8 @@ App.config(['$routeProvider', function ($routeProvider) {
 App.controller('indexCtrl', ['$scope', function ($scope) {
         // Configuration de mon contrôleur index
         $scope.remove = function ($index) {
-          $scope.carts.splice(this.$index, 1);
-      };
+            $scope.carts.splice(this.$index, 1);
+        };
     }]);
 
 App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
@@ -46,7 +55,8 @@ App.controller('computersCtrl', ['$scope', '$http', function ($scope, $http) {
             $scope.carts.push({
                 name: this.computer.nom,
                 img: this.computer.image,
-                price: this.computer.prix
+                price: this.computer.prix,
+                quantity: 1
             });
         };
     }]);
@@ -62,7 +72,8 @@ App.controller('phonesCtrl', ['$scope', '$http', function ($scope, $http) {
             $scope.carts.push({
                 name: this.phone.nom,
                 img: this.phone.image,
-                price: this.phone.prix
+                price: this.phone.prix,
+                quantity: 1
             });
         };
     }]);
@@ -78,7 +89,8 @@ App.controller('padsCtrl', ['$scope', '$http', function ($scope, $http) {
             $scope.carts.push({
                 name: this.data.nom,
                 img: this.data.image,
-                price: this.data.prix
+                price: this.data.prix,
+                quantity: 1
             });
         };
     }]);
@@ -94,7 +106,8 @@ App.controller('watchsCtrl', ['$scope', '$http', function ($scope, $http) {
             $scope.carts.push({
                 name: this.watch.nom,
                 img: this.watch.image,
-                price: this.watch.prix
+                price: this.watch.prix,
+                quantity: 1
             });
         };
     }]);
