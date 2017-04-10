@@ -3,7 +3,7 @@
     <head>
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="assets/css/font-awesome-animation.css">   
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.css">
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa|Permanent+Marker" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
@@ -32,10 +32,10 @@
                                         <table>
                                             <tr>
                                                 <td><p>Article: {{cart.name}} <img style="height: 50px;" src="{{cart.img}}" alt="image de l'article"/> <button type="button" ng-click="remove()">Supprimer</button></p></td>
-                                                <td style="width: 200px; text-align: right;"><button ng-click="cart.quantity = cart.quantity + 1">+</button><button ng-click="cart.quantity = cart.quantity - 1" ng-disabled="cart.quantity <= 0 ">-</button><p><strong>Nbr: </strong>{{cart.quantity}} <strong>prix: </strong>{{cart.price * cart.quantity | currency:'€';}}</p></td>
+                                                <td style="width: 200px; text-align: right;"><button ng-click="cart.quantity = cart.quantity + 1">+</button><button ng-click="cart.quantity = cart.quantity - 1" ng-disabled="cart.quantity <= 0">-</button><p><strong>Nbr: </strong>{{cart.quantity}} <strong>prix: </strong>{{cart.price * cart.quantity| currency:'€';}}</p></td>
                                             </tr>
-                                        </table>            
-                                    </div> 
+                                        </table>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <p><strong>Total: </strong>{{total() | currency:'€'}}</p>
@@ -56,6 +56,8 @@
                                 <li class="col-lg-12 col-xs-8"><a href="#!/pads">Pads</a></li>
                                 <li class="col-lg-12 col-xs-8"><a href="#!/phones">Phones</a></li>
                                 <li class="col-lg-12 col-xs-8"><a  href="#!/watchs">Watchs</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#" data-toggle="modal" data-target="#inscription" name="inscription">Inscription</a></li>
+                                <li class="col-lg-12 col-xs-8"><a href="#" data-toggle="modal" data-target="#connexion" name="connexion">Connexion</a></li>
                                 <li class="col-lg-12 col-xs-8"><button type="button" class="buttonPanel-" data-toggle="modal" data-target="#myModal"><i class="ion-ios-cart" aria-hidden="true"></i> Mon Panier</button></li>
                             </ul>
                         </nav>
@@ -67,7 +69,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                            </div>               
+                            </div>
                             <ul id="navbars" class="col-lg-12 col-xs-12 navbar-collapse collapse" aria-expanded="false">
                                 <li class="col-lg-12 brand"><a class="navbar-brand" href="#">Be Connected</a></li>
                                 <li class="col-lg-12 col-xs-8"><a href="#!/computers">Computers</a></li>
@@ -105,7 +107,7 @@
                         <hr>
                     </div>
                 </div>
-            </header>  
+            </header>
             <div ng-view>
             </div>
             <!-- Début modale à propos -->
@@ -135,6 +137,74 @@
                         </div>
                     </div>
                 </div>
+                <!-- Modal Connexion-->
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div id="connexion" class="modal fade" role="dialog">
+                        <div class="modal-dialog .modal-sm .modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Connexion</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="boxx" name="connexion" title="connexion" action="index.html" method="post">
+                                        <input type="mail" name="mail" value="" placeholder="adresse e-mail" ng-pattern="email.regex" style="width: 100%; height: 35px;">
+                                        <input type="password" name="password" value="" placeholder="mot de passe" style="width: 100%; height: 35px;">
+                                        <button type="submit" name="Valider" title="Valider" style="width: 20%; height: 30px;">Validez</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Inscription-->
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div id="inscription" class="modal fade" role="dialog">
+                        <div class="modal-dialog .modal-sm .modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Inscription</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="boxx" name="inscription" title="inscription" ng-model="monForm">
+                                        <h3>Inscription via : </h3>
+
+                                        <a href="#" ><i class="fa fa-twitter-square"  style="font-size: 45px;"></i></a>
+                                        <a href="#" class=""><i class="fa fa-facebook-square" style="font-size: 45px;"></i></a>
+                                        <a href="#" class="icon-stack icon-2x">
+                                            <i class="fa fa-google-plus-square" style="font-size: 45px;"></i><br>
+                                        </a><br>
+                                        <input type="radio" name="genre" value="Homme"><i class="fa fa-male" size="10px" style="width: 20%; font-size: 45px; color: blue;"></i>
+                                        <input type="radio" name="genre" value="Femme"><i class="fa fa-female" size="10px" style="width: 20%; font-size: 45px; color: pink;"></i><br> <br>
+                                        <input type="text" name="nom" value="" placeholder="Nom" ng-model="Nom" style="width: 45%; height: 35px;" ng-pattern="username.regex" required>
+                                        <input type="text" name="prenom" value="" placeholder="prenom" ng-model="prenom" style="width: 45%; height: 35px;" ng-pattern="username.regex" required>
+                                        <input type="date" name="birthday" value="" placeholder="Date de Naissance" ng-model="birthday" style="width: 45%; height: 35px;" required>
+                                        <input type="text" name="mail" value="" placeholder="adresse e-mail" ng-model="e_mail" style="width: 45%; height: 35px;" ng-pattern="email.regex" required>
+                                        <input type="text" name="mail" value="" placeholder="Confirmation adresse e-mail" style="width: 45%; height: 35px;" ng-pattern="email.regex" required>
+                                        <input type="password" name="password" value="" placeholder="mot de passe" ng-model="password" style="width: 45%; height: 35px;" required>
+                                        <input type="password" name="password" value="" placeholder="Confirmation mot de passe" style="width: 45%; height: 35px;" required><br><br>
+                                        <input type="checkbox" name="condition" id="condition" value="" required><label for="condition"> &nbsp; J'accepte les <a href="#">Condition général d'utilisation</a></label><br><br>
+                                        <button type="submit" name="Valider" title="Valider" ng-click="envoi_donnee()" style="width: 20%; height: 30px;">Valider</button>
+                                        <button type="reset" name="Annuler" style="width: 20%; height: 30px;">Annuler</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <!-- Début modale contact -->
                 <div class="col-lg-9 col-lg-offset-3">
                     <div id="contact" class="modal fade" role="dialog">
@@ -147,9 +217,9 @@
                                 </div>
                                 <div class="modal-body">
                                     <form id="user_info" method="POST" action="assets/formulaire.json" >
-                                        <input class="col-lg-6 contact_content" type="text" id="nom" name="nom" value="" placeholder="Nom">
-                                        <input class="col-lg-6  contact_content" type="text" id="prenom" name="prenom" value="" placeholder="Prenom"><br>
-                                        <input class="col-lg-6 contact_content" type="email" id="email" name="email" value="" placeholder="E-mail"><br>
+                                        <input class="col-lg-6 contact_content" type="text" id="nom" name="nom" value="" ng-pattern="username.regex" placeholder="Nom">
+                                        <input class="col-lg-6  contact_content" type="text" id="prenom" name="prenom" value="" ng-pattern="username.regex" placeholder="Prenom"><br>
+                                        <input class="col-lg-6 contact_content" type="email" id="email" name="email" value="" ng-pattern="email.regex" placeholder="E-mail"><br>
                                         <input class="col-lg-6  contact_content" type="text" id="num_adresse" name="num_adresse" value="" placeholder="Numero de la rue">
                                         <input class="col-lg-6  contact_content" type="text" id="code_postal" name="Code Postal" value="" placeholder="Code Postal"><br>
                                         <textarea class="col-lg-12 contact_content" name="name" id="adresse" rows="4"  placeholder="Adresse"></textarea><br>
@@ -164,6 +234,7 @@
                     </div>
                 </div>
             </div>
+
             <footer>
                 <nav class="navbar-fixed-bottom navbar-inverse">
                     <div class="row modal_row">
@@ -175,11 +246,11 @@
                             <li class="col-lg-offset-5 col-lg-2 col-xs-2" id="aboutUs"><a href="#" data-toggle="modal" data-target="#propos">À propos</a></li>
                             <li class="col-lg-1 col-xs-2"><a href="#" data-toggle="modal" data-target="#contact">Contact</a></li>
                         </ul>
-
                     </div>
                 </nav>
             </footer>
         </div>
+
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/app.js" type="text/javascript"></script>
         <script src="assets/js/script.js" type="text/javascript"></script>
