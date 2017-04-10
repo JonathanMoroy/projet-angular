@@ -19,7 +19,7 @@
                 <div class="container-fluid">
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog .modal-sm .modal-lg">
                             <!-- Contenu du modal-->
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -28,20 +28,20 @@
                                     <h4 class="modal-title">Panier</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="container" ng-repeat="cart in carts">
-                                        <div class="name">                                           
+                                    <div id="container" class="row" ng-repeat="cart in carts">
+                                        <div class="name col-lg-3 col-xs-6">                                           
                                                {{cart.name}}
                                         </div>
-                                        <div class="image">
+                                        <div class="image col-lg-3 col-xs-6">
                                                <img style="height: 50px;" src="{{cart.img}}" alt="image de l'article"/>
                                         </div>      
-                                        <div class="quantity">    
+                                        <div class="quantity col-lg-3 col-xs-4">    
                                               <button ng-init="count = 1" ng-click="count = count + 1">+</button> {{count}} <button ng-click="count = count - 1">-</button>
                                         </div> 
-                                        <div class="prix">
+                                        <div class="prix col-lg-2 col-xs-4">
                                                 {{cart.price * count| currency:'€'}} 
                                         </div>
-                                        <div class="supprim">
+                                        <div class="supprim col-lg-1 col-xs-4">
                                                 <button type="button" ng-click="remove()"><i class="fa fa-trash" aria-hidden="true" id="poubelle"></i></button>
                                         </div>
                                 </div> 

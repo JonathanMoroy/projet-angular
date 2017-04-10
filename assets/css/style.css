@@ -55,8 +55,7 @@ h1{
 /* Début du style du header et footer */
 /* Contenu du modal */
 #container{
-    display: flex;
-    justify-content: space-around;
+   margin-bottom: 50px;
 }
 .name, image, quantity, prix, supprim {
     align-content: center;
