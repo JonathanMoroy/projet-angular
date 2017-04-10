@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="assets/css/font-awesome-animation.css">
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -17,29 +16,39 @@
         <div ng-controller="indexCtrl">
             <header>
                 <!-- Début de la modale panier -->
-                <div class="container">
+                <div class="container-fluid">
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog">
                             <!-- Contenu du modal-->
                             <div class="modal-content">
                                 <div class="modal-header">
+                                    <!-- Croix pour fermer la fenêtre modale -->
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     <h4 class="modal-title">Panier</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <div ng-repeat="cart in carts">
-                                        <table>
-                                            <tr>
-                                                <td><p>Article: {{cart.name}} <img style="height: 50px;" src="{{cart.img}}" alt="image de l'article"/> <button type="button" ng-click="remove()">Supprimer</button></p></td>
-                                                <td style="width: 200px; text-align: right;"><button ng-click="cart.quantity = cart.quantity + 1">+</button><button ng-click="cart.quantity = cart.quantity - 1" ng-disabled="cart.quantity <= 0">-</button><p><strong>Nbr: </strong>{{cart.quantity}} <strong>prix: </strong>{{cart.price * cart.quantity| currency:'€';}}</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                                    <div id="container" ng-repeat="cart in carts">
+                                        <div class="name">                                           
+                                            {{cart.name}}
+                                        </div>
+                                        <div class="image">
+                                            <img style="height: 50px;" src="{{cart.img}}" alt="image de l'article"/>
+                                        </div>      
+                                        <div class="quantity">    
+                                            <button ng-click="cart.quantity = cart.quantity + 1">+</button> {{cart.quantity}} <button ng-click="cart.quantity = cart.quantity - 1" ng-disabled="cart.quantity <= 0">-</button>
+                                        </div> 
+                                        <div class="prix">
+                                            {{cart.price * cart.quantity| currency:'€'}} 
+                                        </div>
+                                        <div class="supprim">
+                                            <button type="button" ng-click="remove()"><i class="fa fa-trash" aria-hidden="true" id="poubelle"></i></button>
+                                        </div>
+                                    </div> 
                                 </div>
                                 <div class="modal-footer">
                                     <p><strong>Total: </strong>{{total() | currency:'€'}}</p>
-                                    <button type="submit">Acheter</button>
+                                    <button type="submit" class="buttonPay">Acheter</button>
                                     <button type="button" class="buttonClose" data-dismiss="modal">Fermer</button>
                                 </div>
                             </div>
